@@ -9,12 +9,6 @@ namespace VectorCalculator
 {
     class VectorCalculator
     {
-        enum Operations: byte
-        {
-            AddVectors = 1,
-            SubsVectors = 2,
-            ScalarProdVectors = 3
-        }
 
         static void EnterVectors(out Vector2D v1, out Vector2D v2)
         {
@@ -28,31 +22,32 @@ namespace VectorCalculator
             Console.WriteLine("Source vectors are:\n\t{0}\n\t{1}", v1, v2);
         }
 
-        static Operations Menu()
+        static VectorOperations Menu()
         {
             Console.WriteLine("Available operations");
-            Operations[] ops = (Operations[])Enum.GetValues(typeof(Operations));
+            VectorOperations[] ops = (VectorOperations[])Enum.GetValues(typeof(VectorOperations));
             for(int i = 0; i < ops.Length; ++i)
             {
                 Console.WriteLine("\t{0}[{1}]", ops[i], i + 1);
             }
             Console.Write("Choose operation: ");
-            return (Operations) Enum.Parse(typeof(Operations), Console.ReadLine());
+            return (VectorOperations) Enum.Parse(typeof(VectorOperations), Console.ReadLine());
         }
 
-        static int ProcessOperation(Vector2D v1, Vector2D v2, Operations operation)
+        static int ProcessOperation(VectorOperations operation, params Vector2D[] vectors)
         {
+            object result = Vector2DLib.VectorUtils.ProcessVectorOperation(operation, vectors);
             int ret = 0;
-            switch(operation)
+            switch (operation)
             {
-                case Operations.AddVectors:
-                    Console.WriteLine("Sum of vectors: {0}", v1 + v2);
+                case VectorOperations.AddVectors:
+                    Console.WriteLine("Sum of vectors: {0}", result);
                     break;
-                case Operations.SubsVectors:
-                    Console.WriteLine("Subs of vectors: {0}", v1 - v2);
+                case VectorOperations.SubsVectors:
+                    Console.WriteLine("Subs of vectors: {0}", result);
                     break;
-                case Operations.ScalarProdVectors:
-                    Console.WriteLine("Scalar prod of vectors: {0}", v1 * v2);
+                case VectorOperations.ScalarProdVectors:
+                    Console.WriteLine("Scalar prod of vectors: {0}", result);
                     break;
                 default:
                     ret = -1;
@@ -68,8 +63,8 @@ namespace VectorCalculator
             {
                 Vector2D v1, v2;
                 EnterVectors(out v1, out v2);
-                Operations op = Menu();
-                ret = ProcessOperation(v1, v2, op);
+                VectorOperations op = Menu();
+                ret = ProcessOperation(op, v1, v2);
             }
         }
     }

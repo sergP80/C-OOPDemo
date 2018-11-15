@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vector2DLib
 {
+
     public class Point2D
     {
         public double X { get; set; }

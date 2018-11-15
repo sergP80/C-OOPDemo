@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorCalculator", "VectorC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2DLib", "Vector2DLib\Vector2DLib.csproj", "{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorCalculator2", "VectorCalculator2\VectorCalculator2.csproj", "{934DAEDE-E9B0-4C9A-9DA9-1BBBFBEDC246}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934DAEDE-E9B0-4C9A-9DA9-1BBBFBEDC246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934DAEDE-E9B0-4C9A-9DA9-1BBBFBEDC246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934DAEDE-E9B0-4C9A-9DA9-1BBBFBEDC246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934DAEDE-E9B0-4C9A-9DA9-1BBBFBEDC246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
