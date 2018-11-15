@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorCalculator", "VectorCalculator\VectorCalculator.csproj", "{3105213D-0A14-42B5-BDEE-E4BD285E3663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2DLib", "Vector2DLib\Vector2DLib.csproj", "{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3105213D-0A14-42B5-BDEE-E4BD285E3663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3105213D-0A14-42B5-BDEE-E4BD285E3663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3105213D-0A14-42B5-BDEE-E4BD285E3663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3105213D-0A14-42B5-BDEE-E4BD285E3663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822ED2EB-3088-46CC-9702-7D55F6DBE4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E37E9D55-DEAC-4D78-9091-DA5408553F6D}
+	EndGlobalSection
+EndGlobal
